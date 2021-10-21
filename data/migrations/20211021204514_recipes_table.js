@@ -30,7 +30,7 @@ exports.up = function(knex) {
     })
     .createTable("quantities",tbl=>{
         tbl.increments("quantity_id")
-        tbl.integer("quantity")
+        tbl.string("quantity")
         tbl.integer("ingredient_id")
             .unsigned()
             .notNullable()
